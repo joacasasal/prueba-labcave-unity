@@ -11,12 +11,12 @@ Proyecto Unity de la Prueba LabCave FullStackDeveloper de Joaqu&iacute;n Casas.
 ###### Funcionamiento:
 Al iniciarse, NetworkManager se conecta al servidor de la url indicada (localhost:8030), correspondiente al del server NodeJS.
 
-*❌Si falla, se muestra un popup indicando el error durante unos segundos, y se cierra.
+*❌Si falla, se muestra un popup indicando el error durante unos segundos, y se cierra.*
 
 
 Al clickar en el bot&oacute;n time_btn, se realiza una petici&oacute;n GET a la API "/time" del server NodeJS.
 
-*❌Si falla, se muestra un popup indicando el error durante unos segundos, y se cierra.
+*❌Si falla, se muestra un popup indicando el error durante unos segundos, y se cierra.*
 
-*✅Si no falla, devuelve la fecha actual, en formato HH:MM:ss (Horas:Minutos:Segundos).
+*✅Si no falla, devuelve la fecha actual, en formato HH:MM:ss (Horas:Minutos:Segundos).*
 

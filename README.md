@@ -9,10 +9,9 @@ Proyecto Unity de la Prueba LabCave FullStackDeveloper de Joaqu&iacute;n Casas.
 - Assets/utils      -> contiene utilidades comunes.
 
 ###### Funcionamiento:
-1. Al iniciarse, NetworkManager se conecta al servidor de la url indicada (localhost:8030), correspondiente al del server NodeJS.
-- *❌Si falla, se muestra un popup indicando el error durante unos segundos, y se cierra.*
+- Al iniciarse, **NetworkManager** se conecta al servidor de la url indicada (*localhost:8030*), correspondiente al del server NodeJS.
+  + *❌Si falla, se muestra un popup indicando el error durante unos segundos, y se cierra.*
 
-
-2. Al clickar en el bot&oacute;n time_btn, se realiza una petici&oacute;n GET a la API "/time" del server NodeJS.
-- *❌Si falla, se muestra un popup indicando el error durante unos segundos, y se cierra.*
-- *✅Si no falla, devuelve la fecha actual, en formato HH:MM:ss (Horas:Minutos:Segundos).*
+- Al clickar en el bot&oacute;n **time_btn**, se realiza una petici&oacute;n GET a la API "/time" del server NodeJS.
+  + *❌Si falla, se muestra un popup indicando el error durante unos segundos, y se cierra.*
+  + *✅Si no falla, devuelve la fecha actual, en formato HH:MM:ss (Horas:Minutos:Segundos).*

@@ -3,10 +3,13 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 /// <summary>
-/// Controls the Network connections.
+/// Controla la conexión al servidor mediante Express.
 /// </summary>
 public class NetworkManager : MonoBehaviour
 {
+    [Tooltip("Activar para usar Express server. Desactivar para usar Socket server.")]
+    public bool serverExpress = true;
+
 	[Header("Config")]
 	public string url;
 
@@ -15,7 +18,10 @@ public class NetworkManager : MonoBehaviour
 
     public virtual void Start()
     {
-        StartCoroutine(ConnectTo(url));
+        if (serverExpress)
+        {
+            StartCoroutine(ConnectTo(url));
+        }
     }
 
     /// <summary>

@@ -8,13 +8,15 @@ Proyecto Unity de la Prueba LabCave FullStackDeveloper de Joaqu&iacute;n Casas.
 - **Assets/scripts**: contiene los scripts C#.
     + **network/NetworkManager**: configuraci&oacute;n para conectarse al *server express*.
     + **network/NetworkManagerSocket**: configuraci&oacute;n para conectarse al *server socket.io*.
-    + **time/Time**: obtiene la hora actual a trav&eacute;s del **server express** (*NetworkManager.serverExpress == true*) o del **server socket.io** (*NetworkManager.serverExpress == false*).
+    + **time/Time**: obtiene la hora actual a trav&eacute;s de:
+        + **server express** (*NetworkManager.serverExpress == true*).
+        + **server socket.io** (*NetworkManager.serverExpress == false*).
 - **Assets/utils**: contiene utilidades comunes.
 
 ###### Funcionamiento:
 1. Al iniciarse:
-    - Si NetworkManager.serverExpress est&aacute; marcado: se conecta al servidor de la url indicada (localhost:8030), correspondiente al del server NodeJS express.
-    - Si NetworkManager.serverExpress NO est&aacute; marcado: se conecta al servidor de la url indicada (127.0.0.1:8031), correspondiente al del server socket.
+    - Si **NetworkManager.serverExpress** est&aacute; marcado: se conecta al servidor de la url indicada (localhost:8030), correspondiente al del server NodeJS express.
+    - Si **NetworkManager.serverExpress NO** est&aacute; marcado: se conecta al servidor de la url indicada (127.0.0.1:8031), correspondiente al del server socket.
 - *❌Si falla, se muestra un popup indicando el error durante unos segundos, y se cierra.*
 
 

@@ -11,9 +11,12 @@ public class NetworkManagerSocket : SocketIOComponent
 
     public override void Start()
     {
-        base.Start();
+        if (gameObject.GetComponent<NetworkManager>() && !gameObject.GetComponent<NetworkManager>().serverExpress) // No express
+        {
+            base.Start();
 
-        On("connected", OnConnected);
+            On("connected", OnConnected);
+        }
     }
 
     /// <summary>
